@@ -7,8 +7,8 @@
         name: httpd
         state: latest
 
-    - name: Start nginx
-      ansible.builtin.service:
+- name: Start nginx
+  ansible.builtin.service:
         name: httpd
         state: started
         enabled: yes
