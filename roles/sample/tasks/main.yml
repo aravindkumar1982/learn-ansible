@@ -4,6 +4,6 @@
     state: latest
 - name: Make sure a service unit is running
   ansible.builtin.systemd:
-    state: restarted
+    state: started
     name: nginx
     enabled: yes
