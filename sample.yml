@@ -10,7 +10,7 @@
     - name: Start nginx
       ansible.builtin.systemd:
         name: nginx
-        state: started
+        state: restarted
         enabled: yes
 
 - name: Install Nginx
