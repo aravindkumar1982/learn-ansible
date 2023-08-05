@@ -4,7 +4,7 @@
         state: latest
 
 - name: Start nginx
-  ansible.builtin.systemctl:
+  ansible.builtin.systemd:
          name: nginx
          state: started
          enabled: yes
