@@ -1,13 +1,13 @@
 - name: install Nginx
-  hosts: WEB
-  become: true
+  #hosts: WEB
+  #become: true
   tasks:
     - name: Install nginx
       ansible.builtin.yum:
         name: nginx
         state: latest
 
-    - #name: Start nginx
+    - name: Start nginx
       ansible.builtin.service:
          name: nginx
          state: started
