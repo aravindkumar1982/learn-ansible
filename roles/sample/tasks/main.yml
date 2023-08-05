@@ -3,8 +3,8 @@
         name: nginx
         state: latest
 
-- name: Start nginx
+- name: Make sure a service unit is running
   ansible.builtin.systemd:
-         name: nginx
-         state: started
-         enabled: yes
+      state: started
+      name: nginx
+      enabled: true
